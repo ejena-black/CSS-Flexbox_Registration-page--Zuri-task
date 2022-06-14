@@ -119,7 +119,7 @@ body{
 
 
 /* *******************MOBILE VIEW******************** */
-@media (max-width: 400px) {
+@media (max-width: 370px) {
     body{
         padding: 30px;
     }
@@ -156,6 +156,7 @@ body{
 
     #text{
         text-align: center;
+        width: 290px;
     }
     #form{
         display: grid;
