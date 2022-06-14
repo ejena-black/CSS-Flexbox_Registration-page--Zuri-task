@@ -122,7 +122,7 @@ body{
 
 
 /* *******************MOBILE VIEW******************** */
-@media (max-width: 375px) {
+@media (max-width: 370px) {
     body{
         padding: 30px;
     }
