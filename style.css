@@ -67,7 +67,7 @@ body{
 
 
 /* *****************DESKTOP VIEW***************** */
-@media (max-width: 1440px){
+@media screen and (min-width: 700px){
     body{
         padding: 0 auto;
         height: 100%;
@@ -125,7 +125,7 @@ body{
 
 /* *******************MOBILE VIEW******************** */
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
     body{
         padding: 30px;
     }
