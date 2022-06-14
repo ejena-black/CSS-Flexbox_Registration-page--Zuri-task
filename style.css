@@ -11,82 +11,88 @@
 html{
     background: url('./assets/bg-intro-desktop.png');
     background-color: hsl(0, 100%, 74%);
+    height: 100%;
 }
 main *{
     font-family: 'Poppins', sans-serif;
 }
+h2{
+    font-size: 40px;
+    margin: 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 25px 35px;
+    border-radius: 8px;
+}
+input{
+    height: 5vh;
+    margin: 12px 0;
+    padding: 5px 30px;
+    font-weight: 700;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+button{
+    margin: 12px 0;
+    padding: 15px;
+    color: white;
+    background: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+small{
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    font-size: 12px;
+}
+small strong{
+    color: hsl(0, 100%, 74%);
+}
+p{
+    line-height: 2;
+}
+
+
+#text{
+    color: white;
+    align-self: center;
+    margin: 0;
+}
+#trial{
+    background: hsl(248, 32%, 49%);
+}
+
+
 
 /* *****************DESKTOP VIEW***************** */
-@media (max-width: 1440px){
+@media (min-width: 800px){
     body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        height: 100%;
         margin: 0;
     }
     main{
-        display: flex;
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
         width: 80vw;
+        height: 100%;
+        align-items: center;
         font-size: 16px;
-    }
-    section{
-        margin: 0 20px;
-    }
-    h2{
-        font-size: 40px;
-        margin: 0;
+        margin: auto;
     }
     p{
         text-align: justify;
     }
-    
-    
-    
-    form{
-        display: flex;
-        flex-direction: column;
-        background: white;
-        padding: 25px 35px;
-        border-radius: 8px;
-    }
-    input{
-        height: 5vh;
-        width: 400px;
-        margin: 12px 0;
-        padding: 5px 30px;
-        font-weight: 700;
-        border: 1px solid hsl(246, 25%, 77%);
-    }
     input:focus{
         outline: 1px solid;
     }
-    button{
-        width: 465px;
-        margin: 12px 0;
-        padding: 15px;
-        color: white;
-        background: hsl(154, 59%, 51%);
-        border: none;
-        border-radius: 5px;
-        font-weight: 400;
-        letter-spacing: 2px;
-    }
-    small{
-        color: hsl(246, 25%, 77%);
-        text-align: center;
-        font-size: 12px;
-    }
-    small strong{
-        color: hsl(0, 100%, 74%);
-    }
     
-    
-    
-    #text{
-        color: white;
-        align-self: center;
-    }
+
     #form{
         display: flex;
         flex-direction: column;
@@ -94,8 +100,7 @@ main *{
     }
     #trial{
         height: 8vh;
-        width: 535px;
-        background: hsl(248, 32%, 49%);
+        width: 470px;
         border: none;
         border-radius: 8px;
         margin: 20px 0;
@@ -105,16 +110,13 @@ main *{
 
 
 /* *******************MOBILE VIEW******************** */
-@media (max-width:500px) {
+@media (max-width:375px) {
     body{
         padding: 30px;
-        margin: 30px;
     }
     main{
-        /* display: flex;
-        flex-direction: column;
-        width: 100%; */
         display: grid;
+        grid-template-rows: 1fr 1fr;
         gap: 20px;
     }
     form{
@@ -123,12 +125,7 @@ main *{
     }
     h2{
         text-align: center;
-        margin-top: 50px;
         font-size: 35px;
-    }
-    p{
-        text-align: center;
-        line-height: 2;
     }
     button, input{
         width: 250px;
@@ -136,11 +133,12 @@ main *{
 
 
     #text{
-        margin-top: 50px;
+        text-align: center;
     }
     #form{
         display: grid;
         grid-template-rows: auto;
+        gap: 20px;
         justify-items: center;
     }
     #trial{
