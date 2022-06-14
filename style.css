@@ -23,10 +23,11 @@ form{
     border-radius: 8px;
 }
 input{
-    height: 30px;
+    height: 40px;
     margin: 12px 0;
     font-weight: 600;
     border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
 }
 button{
     margin: 12px 0;
@@ -38,6 +39,7 @@ button{
     font-weight: 400;
     letter-spacing: 2px;
     box-shadow: 0 5px hsl(153, 33%, 68%);
+    height: 50px;
 }
 small{
     color: hsl(246, 25%, 77%);
@@ -54,7 +56,7 @@ p{
 
 #text{
     color: white;
-    align-self: center;
+    /* align-self: center; */
     margin: 0;
 }
 #trial{
@@ -78,14 +80,14 @@ body{
         grid-template-columns:  1fr 1fr;
         grid-template-rows: 1fr;
         gap: 20px;
-        width: 80vw;
+        width: 1100px;
         height: 100%;
         align-items: center;
         font-size: 16px;
         margin: auto;
     }
     h2{
-        font-size: 40px;
+        font-size: 45px;
         margin: 0;
     }
     p{
@@ -99,6 +101,7 @@ body{
     }
     form{
         padding: 25px 35px;
+        margin: 30px 0;
     }
     
 
@@ -108,7 +111,7 @@ body{
         align-items: center;
     }
     #trial{
-        height: 8vh;
+        height: 60px;
         width: 470px;
         border: none;
         border-radius: 8px;
@@ -140,23 +143,23 @@ body{
         font-weight: 700;
     }
     input{
-        width: 200px;
+        width: 240px;
     }
     input{
         padding: 5px 25px;
     }
     button{
-        width: 250px;
+        width: 290px;
     }
     form{
-        width: 250px;
+        width: 290px;
         padding: 20px 20px;
     }
 
 
     #text{
         text-align: center;
-        width: 290px;
+        width: 330px;
     }
     #form{
         display: grid;
@@ -166,7 +169,7 @@ body{
     }
     #trial{
         text-align: center;
-        width: 290px;
+        width: 330px;
         padding: 20px;
         height: 80px;
     }
