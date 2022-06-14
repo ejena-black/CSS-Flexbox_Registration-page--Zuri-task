@@ -37,6 +37,7 @@ button{
     border-radius: 5px;
     font-weight: 400;
     letter-spacing: 2px;
+    box-shadow: 0 5px hsl(153, 33%, 68%);
 }
 small{
     color: hsl(246, 25%, 77%);
@@ -58,6 +59,7 @@ p{
 }
 #trial{
     background: hsl(248, 32%, 49%);
+    box-shadow: 0 5px hsl(245, 4%, 51%);
 }
 body{
     margin: 0;
@@ -125,7 +127,7 @@ body{
         display: grid;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
-        gap: 40px;
+        gap: 20px;
         margin: 40px 0;
     }
     form{
@@ -138,17 +140,17 @@ body{
         font-weight: 700;
     }
     input{
-        width: 250px;
+        width: 200px;
     }
     input{
         padding: 5px 25px;
     }
     button{
-        width: 300px;
+        width: 250px;
     }
     form{
-        width: 300px;
-        padding: 20px 15px;
+        width: 250px;
+        padding: 20px 20px;
     }
 
 
@@ -163,7 +165,7 @@ body{
     }
     #trial{
         text-align: center;
-        width: 300px;
+        width: 290px;
         padding: 20px;
         height: 80px;
     }
